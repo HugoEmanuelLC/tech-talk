@@ -23,6 +23,7 @@ connue et utilisé reste jQuery, en effets, +/- 78% des sites inclus dans le top
     * https://day.js.org/docs/en/get-set/get-set
     * https://editorjs.io/
     * https://leafletjs.com/
+    * https://simpleparallax.com/
     
     Gestion audio js:
         - *https://howlerjs.com/*
@@ -38,4 +39,8 @@ connue et utilisé reste jQuery, en effets, +/- 78% des sites inclus dans le top
     * http://www.robinpayot.com/
     * http://void-ii.hi-res.net/room/digital-skin
     * https://lx2h8.csb.app/
-    * ***https://threejs.org/***
+    * https://threejs.org/
+
+    * https://phaser.io/ 
+    * https://impactjs.com/
+    * https://www.ux-republic.com/creer-un-jeu-video-en-javascript-1/
