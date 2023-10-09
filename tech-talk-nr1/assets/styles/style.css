@@ -26,7 +26,8 @@ body {
 }
 
 .titreProjet {
-  padding: 15px 0 5px;
+  background-color: black;
+  padding: 20px 0 5px;
   text-align: center;
   font-size: 3em;
 }
@@ -44,6 +45,14 @@ body {
   line-height: 2;
 }
 
+.exemple_de_code {
+  padding: 50px 100px;
+}
+.exemple_de_code img {
+  max-width: 100%;
+  margin: 50px 0;
+}
+
 .nav_main {
   position: fixed;
   top: 0;
@@ -54,6 +63,7 @@ body {
   flex-wrap: wrap;
 }
 .nav_main a {
+  flex-grow: 1;
   padding: 5px 15px;
   background-color: darkred;
   text-transform: capitalize;
@@ -94,4 +104,107 @@ body {
 }
 .header_main .container_main h3:last-child {
   text-decoration: underline;
+}
+
+.sortable {
+  background-color: gray;
+  min-height: 100vh;
+  padding-top: 100px;
+}
+
+.demo4 {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.group_list {
+  background-color: bisque;
+  padding: 20px;
+  color: black;
+  width: 500px;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.group_list h3 {
+  padding: 10px;
+}
+.group_list .item {
+  background-color: antiquewhite;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  display: flex;
+}
+.group_list .item div {
+  display: flex;
+}
+.group_list .item > div:first-child {
+  padding: 0 10px;
+  justify-content: center;
+  align-items: center;
+}
+.group_list .item .contenue {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px 0 0;
+}
+.group_list .item .contenue div {
+  flex: 1;
+  align-items: center;
+}
+.group_list .item .contenue div p {
+  padding: 0 10px;
+  flex: 1;
+}
+.group_list img {
+  width: 100px;
+}
+
+#nestedDemo {
+  padding: 20px 50px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+#nestedDemo div {
+  padding: 10px;
+  color: black;
+}
+
+.nested-sortable, .nested-1, .nested-2, .nested-3 {
+  margin-top: 5px;
+}
+
+.nested-1 {
+  background-color: #e6e6e6;
+}
+
+.nested-2 {
+  background-color: #cccccc;
+}
+
+.nested-3 {
+  background-color: #b3b3b3;
+}
+
+.frameworks {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: solid rgba(0, 0, 0, 0.3) 1px;
+  padding: 20px;
+}
+
+.box_canvas {
+  padding-top: 100px;
+  max-width: 90%;
+  height: 500px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.box_canvas canvas {
+  max-width: 50%;
 }/*# sourceMappingURL=style.css.map */

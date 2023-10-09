@@ -27,18 +27,31 @@ $('.a_projet_1_v2').click(function() {
 
 
 
-//EXEMPLES DE CODE
-$('.a_exemple_de_code').click(function() {
-    $('#exemple_de_code').load(componente+'exemple_de_code.html')
+//SORTABLE
+$('.a_sortable').click(function() {
+    $('#sortable').load(componente+'autres/Sortable/sortable.html')
 })
+// $('#sortable').load(componente+'autres/Sortable/sortable.html')
 
 
-
-//RADIO
-$('.a_radio').click(function() {
-    $('#radio').load(componente+'autres/radio/index.html')
+//SWIPERJS
+$('.a_swiperjs').click(function() {
+    $('#swiperjs').load(componente+'autres/SwiperJs/swiperjs.html')
 })
+// $('#swiperjs').load(componente+'autres/SwiperJs/swiperjs.html')
 
+
+//CHARTJS
+$('.a_chartjs').click(function() {
+    $('#chartjs').load(componente+'autres/ChartJs/chartjs.html')
+})
+// $('#chartjs').load(componente+'autres/ChartJs/chartjs.html')
+
+//CHARTJS
+// $('.a_chartjs').click(function() {
+    // $('#gallery_threejs').load(componente+'autres/Gallery/gallery.html')
+// })
+$('#gallery_threejs').load(componente+'autres/Gallery/gallery.html')
 
 
 

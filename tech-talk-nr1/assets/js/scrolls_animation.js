@@ -10,8 +10,9 @@ $(function(){
     let projet_1 = $('#projet_1');
     let projet_1_v2 = $('#projet_1_v2');
     let presentation = $('#presentation');
-    let exemple_de_code = $('#exemple_de_code');
-    let radio = $('#radio');
+    let sortable = $('#sortable');
+    let swiperjs = $('#swiperjs');
+    let chartjs = $('#chartjs');
 
 
 
@@ -26,9 +27,11 @@ $(function(){
 
     let a_presentation = $(".a_presentation");
 
-    let a_exemple_de_code = $(".a_exemple_de_code");
+    let a_sortable = $(".a_sortable");
 
-    let a_radio = $(".a_radio");
+    let a_swiperjs = $(".a_swiperjs");
+
+    let a_chartjs = $(".a_chartjs");
 
 
 
@@ -69,15 +72,21 @@ $(function(){
         }, 2000);
     })
     
-    a_exemple_de_code.click(function(){
+    a_sortable.click(function(){
         html_body.animate({
-            scrollTop: exemple_de_code.offset().top
+            scrollTop: sortable.offset().top
         }, 2000);
     })
     
-    a_radio.click(function(){
+    a_swiperjs.click(function(){
         html_body.animate({
-            scrollTop: radio.offset().top
+            scrollTop: swiperjs.offset().top
+        }, 2000);
+    })
+    
+    a_chartjs.click(function(){
+        html_body.animate({
+            scrollTop: chartjs.offset().top
         }, 2000);
     })
 

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- LIBRARY JQUERY -->
     <script type="text/javascript" src="./src/jquery/jquery.min.js"></script>
 
@@ -12,18 +12,19 @@
     <!--LIBRARY AOS ANIMATION SCROLL-->
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <!-- LIBRAIRY ANIMATE.STYLE -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
+    <!-- GALLERY THREE js -->
+	<link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+	<link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <link rel="stylesheet" href="./src/gallery/style.css">
 
-
-    
     <link rel="stylesheet" href="./assets/styles/style.css">
     <!-- style projet 0 -->
     <link rel="stylesheet" href="./projet_0/assets/styles/style.css">
     <!-- style projet 1 -->
     <link rel="stylesheet" href="./projet_1/assets/styles/style.css">
-    <!-- LOWER js RADIO -->
-    <link rel="stylesheet" href="./LOWER-JS/style.css">
+
 
     <title>Tech Talk 05/10/2023 | Library Javascript</title>
 
@@ -39,26 +40,27 @@
             <a class="a_projet_1" href="#">Projet 1</a>|
             <a class="a_projet_0_v2" href="#">Projet 0 v2</a>|
             <a class="a_projet_1_v2" href="#">Projet 1 v2</a>|
-            <a class="a_exemple_de_code" href="#">Exo code</a>|
-            <a class="a_radio" href="#">Radio</a>
+            <a class="a_sortable" href="#">Sortable js</a>|
+            <a class="a_swiperjs" href="#">Swiper js</a>|
+            <a class="a_chartjs" href="#">Chart js</a>
             <!-- <a class="a_choreographer" href="#">choreographer</a> -->
         </nav>
 
-        <!-- <header class="header_main">
+        <header class="header_main">
             <div class="container_main">
-                <h1 class="start_1 none">Hugo Clavinas</h1>
-                <h3 class="start_2 none">Tech Talk: </h3>
-                <h3 class="start_3 none">JavaScript libraries</h3>
+                <h1 class="start_1 none">Welcome to the</h1>
+                <h3 class="start_2 none">Wonderful world of</h3>
+                <h3 class="start_3 none">Javascript libraries:</h3>
             </div>
-        </header> -->
+        </header>
 
-        
+
         <!-- <div id="box">
             <p id="p">Animating based on scroll location.</p>
         </div> -->
 
         <!-- Add Components -->
-        <main></main>
+        <!-- <main></main> -->
 
         <section id="presentation"></section>
 
@@ -70,9 +72,13 @@
 
         <section id="projet_1_v2"></section>
 
-        <section id="exemple_de_code"></section>
-
         <section id="radio"></section>
+
+        <section id="sortable"></section>
+
+        <section id="swiperjs"></section>
+
+        <section id="chartjs"></section>
 
         <!-- <section data-aos="flip-down" id="intro">
             <div class="container">
@@ -97,26 +103,28 @@
     <script src="./routesComponents/AddComponents.js"></script>
     <!--ANIMATION SCROLL AUTO-->
     <script type="text/javascript" src="./assets/js/scrolls_animation.js"></script>
+    <!-- CDN's -->
     <!--LIBRARY AOS ANIMATION SCROLL-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- LIBRARY FOR DATES -->
-    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
-      <!-- Scripts HOWLER JS -->
-    <!-- <script src="./LOWER-JS/howler.core.js"></script>
-    <script src="./LOWER-JS/player.js"></script>
-    <script src="./LOWER-JS/siriwave.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script> -->
+    <!-- Librairy Sortable Js -->
+    <script src="./src/library/sortable/sortable.js"></script>
+    <!-- LIBRAIRY SWIPER JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+    <!-- LIBRAIRY CHART JS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- GALLERY THREE js -->
+    <script src="./src/gallery/App.js"></script>
+    <script src="./src/gallery/index.js"></script>
     <script>
         //AOS
         AOS.init({
             duration: 2000,
             // delay: 500
         });
-
-
-
-        //DAY.JS
-        let now = dayjs()
-
+        
     </script>
 </body>
 
