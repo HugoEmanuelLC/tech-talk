@@ -45,3 +45,18 @@ connue et utilisé reste jQuery, en effets, +/- 78% des sites inclus dans le top
     * https://phaser.io/ 
     * https://impactjs.com/
     * https://www.ux-republic.com/creer-un-jeu-video-en-javascript-1/
+
+
+> #### TECH TALK NR 2, date 07/11/2023
+
+### Sell code
+
+- Exemple de platform:
+
+    * *https://ThemeForest.net*
+    * *https://CodeCanyon.net*
+
+- Principal source
+    * *https://www.youtube.com/watch?v=OQFUoXCclrA*
+
+    

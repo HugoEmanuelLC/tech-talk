@@ -1,0 +1,136 @@
+<h2 class="titreProjet">Demo, Library sortable:</h2>
+<a href="https://sortablejs.github.io/Sortable/" class="" target="_blank">Sortable js, reorderable drag-and-drop lists</a>
+<div class="sortable">
+    <div class="demo4">
+        <div id="example4Left" class="group_list">
+            <h3>List to copy</h3>
+            <p>Lorem, ipsum dolor.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <div class="item">
+                <div>
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="contenue">
+                    <div class="">
+                        <img src="http://placekitten.com/g/408/287" alt="Tech">
+                        <p>Placekitten</p>
+                    </div>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+            </div>
+
+            <div class="item">
+                <div>
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="contenue">
+                    <div class="">
+                        <img src="https://picsum.photos/200" alt="Tech">
+                        <p>Picsum</p>
+                    </div>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+            </div>
+
+            <div class="item">
+                <div>
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="contenue">
+                    <div class="">
+                        <img src="https://picsum.photos/200/200/?blur" alt="Tech">
+                        <p>Picsum</p>
+                    </div>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+            </div>
+        </div>
+
+
+        <div>
+            <h3>List copied nr 1</h3>
+            <div id="example4Right_1" class="group_list"></div>
+
+            <br>
+            <h3>List copied nr 2</h3>
+            <div id="example4Right_2" class="group_list"></div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div id="nestedDemo" class="list-group col nested-sortable">
+        <div class="list-group-item nested-1">Item 1.1
+            <div class="list-group nested-sortable">
+                <div class="list-group-item nested-2">Item 2.1</div>
+                <div class="list-group-item nested-2">Item 2.2
+                    <div class="list-group nested-sortable">
+                        <div class="list-group-item nested-3">Item 3.1</div>
+                        <div class="list-group-item nested-3">Item 3.2</div>
+                        <div class="list-group-item nested-3">Item 3.3</div>
+                        <div class="list-group-item nested-3">Item 3.4</div>
+                    </div>
+                </div>
+                <div class="list-group-item nested-2">Item 2.3</div>
+                <div class="list-group-item nested-2">Item 2.4</div>
+            </div>
+        </div>
+        <div class="list-group-item nested-1">Item 1.2</div>
+        <div class="list-group-item nested-1">Item 1.3</div>
+        <div class="list-group-item nested-1">Item 1.4
+            <div class="list-group nested-sortable">
+                <div class="list-group-item nested-2">Item 2.1</div>
+                <div class="list-group-item nested-2">Item 2.2</div>
+                <div class="list-group-item nested-2">Item 2.3</div>
+                <div class="list-group-item nested-2">Item 2.4</div>
+            </div>
+        </div>
+        <div class="list-group-item nested-1">Item 1.5</div>
+    </div>
+</div>
+<div class="exemple_de_code">
+    <img src="./assets/images/Sortable-library-js.png" alt="" srcset="">
+</div>
+
+
+<script>
+    let example4Left = document.querySelector('#example4Left')
+    let example4Right_1 = document.querySelector('#example4Right_1')
+    let example4Right_2 = document.querySelector('#example4Right_2')
+
+    new Sortable(example4Left, {
+        group: {
+            name: 'shared',
+            pull: 'clone',
+            put: false // Do not allow items to be put into this list
+        },
+        animation: 150,
+        sort: false // To disable sorting: set sort to false
+    });
+
+    new Sortable(example4Right_1, {
+        group: 'shared',
+        animation: 150
+    });
+
+    new Sortable(example4Right_2, {
+        group: 'shared',
+        animation: 150
+    });
+
+
+
+    let nestedSortables = document.querySelectorAll('.list-group')
+
+    for (var i = 0; i < nestedSortables.length; i++) {
+        new Sortable(nestedSortables[i], {
+            group: 'nested',
+            animation: 150,
+            fallbackOnBody: true,
+            swapThreshold: 0.65
+        });
+    }
+</script>

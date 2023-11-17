@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- LIBRARY JQUERY -->
+    <script type="text/javascript" src="./src/jquery/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css">
+    <!--LIBRARY AOS ANIMATION SCROLL-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <!-- LIBRAIRY ANIMATE.STYLE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- GALLERY THREE js -->
+	<link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+	<link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <link rel="stylesheet" href="./src/gallery/style.css">
+
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <!-- style projet 0 -->
+    <link rel="stylesheet" href="./projet_0/assets/styles/style.css">
+    <!-- style projet 1 -->
+    <link rel="stylesheet" href="./projet_1/assets/styles/style.css">
+
+
+    <title>Tech Talk 05/10/2023 | Library Javascript</title>
+
+</head>
+
+<body>
+    <div id="page">
+        <nav class="nav_main">
+            <a class="a_scroll_up" href="#">Up</a>|
+            <a class="a_start" href="#">Start</a>|
+            <a class="a_presentation a_start_2" href="#">Presentation</a>|
+            <a class="a_projet_0" href="#">Projet 0</a>|
+            <a class="a_projet_1" href="#">Projet 1</a>|
+            <a class="a_projet_0_v2" href="#">Projet 0 v2</a>|
+            <a class="a_projet_1_v2" href="#">Projet 1 v2</a>|
+            <a class="a_sortable" href="#">Sortable js</a>|
+            <a class="a_swiperjs" href="#">Swiper js</a>|
+            <a class="a_chartjs" href="#">Chart js</a>
+            <!-- <a class="a_choreographer" href="#">choreographer</a> -->
+        </nav>
+
+        <header class="header_main">
+            <div class="container_main">
+                <h1 class="start_1 none">Welcome to the</h1>
+                <h3 class="start_2 none">Wonderful world of</h3>
+                <h3 class="start_3 none">Javascript libraries:</h3>
+            </div>
+        </header>
+
+
+        <!-- <div id="box">
+            <p id="p">Animating based on scroll location.</p>
+        </div> -->
+
+        <!-- Add Components -->
+        <!-- <main></main> -->
+
+        <section id="presentation"></section>
+
+        <section id="projet_0"></section>
+
+        <section id="projet_1"></section>
+
+        <section id="projet_0_v2"></section>
+
+        <section id="projet_1_v2"></section>
+
+        <section id="radio"></section>
+
+        <section id="sortable"></section>
+
+        <section id="swiperjs"></section>
+
+        <section id="chartjs"></section>
+
+        <!-- <section data-aos="flip-down" id="intro">
+            <div class="container">
+                <h1>Welcome to the wonderful world of javascript libraries</h1>
+            </div>
+        </section> -->
+
+        <!-- <section id="projet_1">
+            <div class="container">
+                <div data-aos="fade-down-right">test librery</div>
+            </div>
+        </section> -->
+
+        <!-- <footer id="choreographer">
+            <div class="container">
+            </div>
+        </footer> -->
+    </div>
+
+
+    <!-- ADD COMPONENTS -->
+    <script src="./routesComponents/AddComponents.js"></script>
+    <!--ANIMATION SCROLL AUTO-->
+    <script type="text/javascript" src="./assets/js/scrolls_animation.js"></script>
+    <!-- CDN's -->
+    <!--LIBRARY AOS ANIMATION SCROLL-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- LIBRARY FOR DATES -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script> -->
+    <!-- Librairy Sortable Js -->
+    <script src="./src/library/sortable/sortable.js"></script>
+    <!-- LIBRAIRY SWIPER JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+    <!-- LIBRAIRY CHART JS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- GALLERY THREE js -->
+    <script src="./src/gallery/App.js"></script>
+    <script src="./src/gallery/index.js"></script>
+    <script>
+        //AOS
+        AOS.init({
+            duration: 2000,
+            // delay: 500
+        });
+        
+    </script>
+</body>
+
+</html>
